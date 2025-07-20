@@ -1,0 +1,108 @@
+# Songs List Manager 🎵
+
+A custom Webpack-configured React-Redux application for managing music collections with full CRUD operations.
+
+[![GitHub](https://img.shields.io/github/license/Fuadseid/songs_list)](https://github.com/Fuadseid/songs_list)
+
+## Features
+- **Custom Webpack Setup**: Manual configuration (no CRA/Vite)
+- **Full CRUD Operations**: Create, Read, Update, Delete songs
+- **State Management**: Redux with Sagas middleware
+- **Mock Backend**: MockAPI.io integration
+- **Learning Focus**: Built to understand build tooling deeply
+
+## Project Structure
+```
+songs_list/
+├── config/
+│   ├── webpack.common.js
+│   ├── webpack.dev.js
+│   └── webpack.prod.js
+├── src/
+│   ├── App.js               # Root component
+│   ├── Add.jsx              # Add song form
+│   ├── Edit.jsx             # Edit song form
+│   └── redux/
+│       ├── Action.js        # Action creators
+│       ├── Reducer.js       # Combined reducer
+│       ├── Saga.js          # Saga middleware
+│       ├── store.js         # Store configuration
+└── public/                  # Static assets
+```
+
+## Webpack Configuration Highlights
+```javascript
+// webpack.common.js
+module.exports = {
+  module: {
+    rules: [
+      {
+        test: /\.(js|jsx)$/,
+        exclude: /node_modules/,
+        use: ['babel-loader']
+      },
+      {
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader']
+      }
+    ]
+  },
+  resolve: {
+    extensions: ['*', '.js', '.jsx']
+  }
+};
+```
+
+## Setup (Webpack-specific)
+1. Clone repository:
+   ```bash
+   git clone https://github.com/Fuadseid/songs_list.git
+   cd songs_list
+   ```
+2. Install dependencies:
+   ```bash
+   npm install webpack webpack-cli webpack-dev-server @babel/core babel-loader --save-dev
+   ```
+3. Configure environment:
+   ```bash
+   cp .env.example .env
+   ```
+4. Run development server:
+   ```bash
+   npm run dev
+   ```
+5. Production build:
+   ```bash
+   npm run build
+   ```
+
+## Key Learnings
+- **Webpack Configuration**:
+  - Manual loaders for JSX/CSS
+  - Dev vs production setups
+  - Babel integration
+- **Build Process**:
+  - Bundle optimization
+  - Dev server configuration
+  - Environment variables
+- **Architecture**:
+  - Redux middleware integration
+  - Saga patterns for async
+  - Mock API strategies
+
+## Development Notes
+- **AI Assistance**: Used for Webpack troubleshooting and Redux-Saga patterns
+- **Manual Configuration**: All build tools configured from scratch
+- **Debugging**: Learned Webpack bundle analysis techniques
+
+## License
+MIT © [Fuad Seid](https://github.com/Fuadseid)
+```
+
+Key additions for Webpack focus:
+1. **Webpack Config Section**: Shows actual configuration snippet
+2. **Setup Instructions**: Webpack-specific package installation
+3. **Learning Emphasis**: New section highlighting Webpack/REDUX learnings
+4. **Build Scripts**: Separate dev/production commands
+5. **Configuration Files**: Added to project structure
+
