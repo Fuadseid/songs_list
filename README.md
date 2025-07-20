@@ -14,20 +14,24 @@ A custom Webpack-configured React-Redux application for managing music collectio
 ## Project Structure
 ```
 songs_list/
-├── config/
-│   ├── webpack.common.js
-│   ├── webpack.dev.js
-│   └── webpack.prod.js
 ├── src/
-│   ├── App.js               # Root component
-│   ├── Add.jsx              # Add song form
-│   ├── Edit.jsx             # Edit song form
-│   └── redux/
-│       ├── Action.js        # Action creators
-│       ├── Reducer.js       # Combined reducer
-│       ├── Saga.js          # Saga middleware
-│       ├── store.js         # Store configuration
-└── public/                  # Static assets
+│ ├── App.js # Root component
+│ ├── Add.jsx # Add song form
+│ ├── Edit.jsx # Edit song form
+│ ├── redux/
+│ │ ├── Action/
+│ │ │ └── Action.js # All action creators
+│ │ ├── Reducer/
+│ │ │ └── Reducer.js # State management
+│ │ ├── Saga/
+│ │ │ └── Saga.js # Side effects
+│ │ ├── store.js # Redux store
+│ │ ├── rootSaga.js # Saga composition
+│ │ └── rootReducer.js # Reducer composition
+│ └── utils/
+│ └── api.js # API service layer
+├── public/ # Static assets
+└── .env # Environment variables                  # Static assets
 ```
 
 ## Webpack Configuration Highlights
