@@ -101,12 +101,5 @@ module.exports = {
 
 ## License
 MIT © [Fuad Seid](https://github.com/Fuadseid)
-```
 
-Key additions for Webpack focus:
-1. **Webpack Config Section**: Shows actual configuration snippet
-2. **Setup Instructions**: Webpack-specific package installation
-3. **Learning Emphasis**: New section highlighting Webpack/REDUX learnings
-4. **Build Scripts**: Separate dev/production commands
-5. **Configuration Files**: Added to project structure
 
