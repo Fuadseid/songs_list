@@ -1,7 +1,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const webpack = require('webpack');
-require('dotenv').config(); // ✅ Load .env
+require('dotenv').config(); 
 
 module.exports = {
   entry: './src/index.js',
@@ -31,7 +31,7 @@ module.exports = {
       template: './public/index.html',
     }),
     new webpack.DefinePlugin({
-      'process.env.REACT_APP_BASE_URL': JSON.stringify(process.env.REACT_APP_BASE_URL), // ✅ Explicitly inject only this variable
+      'process.env.REACT_APP_BASE_URL': JSON.stringify(process.env.REACT_APP_BASE_URL), 
     }),
   ],
   devServer: {
