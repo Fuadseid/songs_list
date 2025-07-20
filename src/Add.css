@@ -1,0 +1,92 @@
+/* Add.css - Styling for AddArtistForm component */
+
+.add-artist-form {
+  max-width: 500px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.add-artist-form h2 {
+  color: #343a40;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.add-artist-form input,
+.add-artist-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 1rem;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+.add-artist-form input:focus,
+.add-artist-form textarea:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+}
+
+.add-artist-form textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.add-artist-form button {
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-artist-form button:hover {
+  background-color: #0056b3;
+}
+
+.add-artist-form button:disabled {
+  background-color: #6c757d;
+  cursor: not-allowed;
+}
+
+/* Loading state */
+.add-artist-form .loading {
+  display: inline-block;
+  margin-left: 10px;
+  width: 20px;
+  height: 20px;
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  border-top-color: white;
+  animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* Error message */
+.add-artist-form .error-message {
+  color: #dc3545;
+  margin-top: 0.5rem;
+  font-size: 14px;
+}
+
+/* Success message */
+.add-artist-form .success-message {
+  color: #28a745;
+  margin-top: 0.5rem;
+  font-size: 14px;
+}
