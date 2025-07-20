@@ -118,7 +118,7 @@ module.exports = {
   - Saga patterns for async
   - Mock API strategies
 
-the imagees are below
+
 🎵 Homepage
 Shows the main page listing all songs in the music collection.
 ![Homepage](public/homepage.png)
