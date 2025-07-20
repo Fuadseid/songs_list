@@ -1,0 +1,147 @@
+/* Base Styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f7fa;
+  margin: 0;
+  padding: 20px;
+}
+
+.app-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Header Styles */
+.main {
+  color: white;
+  background: linear-gradient(135deg, #0029ff, #6a11cb);
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 14px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.main h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.main p {
+  margin: 10px 0 20px;
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+/* Button Styles */
+.button {
+  padding: 12px 25px;
+  font-size: 16px;
+  border-radius: 30px;
+  cursor: pointer;
+  border: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.add-button {
+  background-color: white;
+  color: #0029ff;
+}
+
+.add-button:hover {
+  background-color: #f0f0f0;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Music List Styles */
+.music-list-container {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  padding: 20px;
+}
+
+.music-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 0;
+  margin: 0;
+}
+
+.song-item {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  transition: all 0.2s ease;
+}
+
+.song-item:hover {
+  transform: translateX(5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.song-info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.song-title {
+  margin: 0;
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.song-details {
+  display: flex;
+  gap: 15px;
+}
+
+.album, .artist {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.album::before {
+  content: "Album: ";
+  font-weight: 500;
+  color: #888;
+}
+
+.artist::before {
+  content: "Artist: ";
+  font-weight: 500;
+  color: #888;
+}
+
+/* Delete Button */
+.delete-btn {
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: none;
+  background: #ffebee;
+  color: #f44336;
+  font-weight: bold;
+  transition: all 0.2s ease;
+}
+
+.delete-btn:hover {
+  background: #f44336;
+  color: white;
+  transform: scale(1.1);
+}
