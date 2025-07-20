@@ -119,10 +119,20 @@ module.exports = {
   - Mock API strategies
 
 the imagees are below
+🎵 Homepage
+Shows the main page listing all songs in the music collection.
 ![Homepage](public/homepage.png)
 
+
+
+➕ Add Song
+Displays the form to add a new song to your collection.
 ![Add Song](public/addsong.png)
 
+
+
+✏️ Edit Song
+Displays the form to edit an existing song’s details.
 ![Edit Song](public/editsong.png)
 
 ## Development Notes
