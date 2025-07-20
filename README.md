@@ -35,7 +35,7 @@ songs_list/
 
 ## Webpack Configuration Highlights
 ```javascript
-//const path = require('path');
+const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const webpack = require('webpack');
 require('dotenv').config(); 
