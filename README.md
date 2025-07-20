@@ -30,7 +30,6 @@ songs_list/
 │ │ └── rootReducer.js # Reducer composition
 │ └── utils/
 │ └── api.js # API service layer
-├── public/ # Static assets
 └── .env # Environment variables                  # Static assets
 ```
 
