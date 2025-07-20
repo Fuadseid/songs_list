@@ -1,4 +1,4 @@
-const BASE_URL = process.env.REACT_APP_BASE_URL;
+const BASE_URL = process.env.REACT_APP_BASE_URL || "https://687cbde4918b6422432f4fc8.mockapi.io/api/";
 
 export const apiFetch = async (endpoint, options = {}) => {
   const response = await fetch(`${BASE_URL}${endpoint}`, {
