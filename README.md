@@ -118,6 +118,13 @@ module.exports = {
   - Saga patterns for async
   - Mock API strategies
 
+the imagees are below
+![Homepage](public/homepage.png)
+
+![Add Song](public/addsong.png)
+
+![Edit Song](public/editsong.png)
+
 ## Development Notes
 - **AI Assistance**: Used for Webpack troubleshooting and Redux-Saga patterns
 - **Manual Configuration**: All build tools configured from scratch
